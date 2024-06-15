@@ -2,7 +2,6 @@
 layout: default
 title:  Bluetooth
 nav_order: 2
-
 ---
 
 # Bluetooth
