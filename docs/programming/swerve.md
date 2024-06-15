@@ -1,6 +1,13 @@
+---
+layout: default
+title:  Swerve
+nav_order: 1
+---
+# Swerve
+
 In this guide, we will walk through the first steps for creating a usable swerve drive. The first of these steps is to create a subsystem to store swerve modules.&#x20;
 
-# Creating the Objects
+## Creating the Objects
 
 The first step in making the Swerve module class is to create all of the objects that you will need:
 
@@ -52,7 +59,7 @@ Finally, we set an offset on the rotation motor to make sure it points forward.&
 private double offset;
 ```
 
-# Writing the main class
+## Writing the main class
 
 This second step is to write the actual class for the swerve module.&#x20;
 
@@ -159,9 +166,9 @@ angleController = new PIDController(KAngleP, 0, KAngleD);
 
 <br>
 
-# Setting Desired Module States
+## Setting Desired Module States
 
-Finally, we need to actually create a function to set the module states. This is done using the following functions.&#x20;
+Finally, we need to actually create a function to set tahe module states. This is done using the following functions.&#x20;
 
 ```java
   public void setDesiredState(SwerveModuleState desiredState) {
