@@ -33,6 +33,8 @@ github_username:  jekyll
 remote_theme: carlosperate/jekyll-theme-rtd
 plugins:
   - jekyll-remote-theme
+
+search_enabled: false
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
