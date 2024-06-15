@@ -27,12 +27,12 @@
   {%- if site.google_analytics %}{% include ganalytics.html %}{% endif %}
 </head>
 
-<body class="wy-body-for-nav" role="document" style="background-color: black;">
+<body class="wy-body-for-nav" role="document" id="pageBody">
 
   <div class="wy-grid-for-nav">
 
     {%- comment %} SIDE NAV, TOGGLES ON MOBILE {% endcomment %}
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <nav data-toggle="wy-nav-shift" id="navbar" class="wy-nav-side stickynav">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
           {%- if site.logo %}
@@ -58,11 +58,11 @@
       </nav>
 
       {%- comment %} PAGE CONTENT {% endcomment %}
-      <div class="wy-nav-content" style="background-color: #333;">
-        <div class="rst-content" style="color: lightgray;">
+      <div class="wy-nav-content" id="pageContentDiv">
+        <div class="rst-content" id="breadcrumbDiv">
           {% include breadcrumbs.html %}
           <div role="main">
-            <div class="section" style="color:antiquewhite">
+            <div class="section" id="compiledMarkdownDiv">
               {{ content }}
             </div>
           </div>
