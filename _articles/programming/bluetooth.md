@@ -11,3 +11,7 @@ nav_order: 2
 
 
 ## Our API
+
+{% for post in site.title %}
+    {{post}}
+{% endfor %}
