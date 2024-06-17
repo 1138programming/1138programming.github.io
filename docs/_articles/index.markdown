@@ -2,6 +2,7 @@
 layout: default
 title: Welcome!
 nav_order: 0
+permalink: /
 ---
 
 # Welcome to the 1138 Wiki!
