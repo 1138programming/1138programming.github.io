@@ -1,9 +1,9 @@
 ---
 layout: default
 title:  Bluetooth
-nav_order: 2
-permalink: /programming/bluetooth.html
 author: Joshua Duross
+permalink: /programming/bluetooth.html
+nav_order: 2
 ---
 
 # Bluetooth
