@@ -2,6 +2,7 @@
 layout: default
 title: How to write an article
 nav_exclude: true
+permalink: /misc/howto.html
 ---
 
 # How to write an article

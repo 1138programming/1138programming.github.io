@@ -2,7 +2,7 @@
 layout: default
 title:  Bluetooth
 nav_order: 2
-permalink: /programming/bluetooth
+permalink: /programming/bluetooth.html
 author: Joshua Duross
 ---
 

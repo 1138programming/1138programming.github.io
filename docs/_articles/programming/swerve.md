@@ -1,7 +1,7 @@
 ---
 layout: base
 title:  Swerve
-permalink: /programming/swerve
+permalink: /programming/swerve.html
 nav_order: 1
 author: Will Seguin
 ---
