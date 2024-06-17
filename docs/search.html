@@ -10,7 +10,7 @@ layout: base
         "{{ article.url | slugify }}": {
           "title": "{{ article.title | xml_escape }}",
           "author": "{{ article.author | xml_escape }}",
-          "content": {{ article.content | strip_html | strip_newlines | jsonify }},
+          "content": {{ article.content | strip_html | jsonify }},
           "url": "{{ article.url | xml_escape }}"
         }
         {% unless forloop.last %},{% endunless %}

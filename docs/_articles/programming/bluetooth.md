@@ -3,6 +3,7 @@ layout: default
 title:  Bluetooth
 nav_order: 2
 permalink: /programming/bluetooth
+author: Joshua Duross
 ---
 
 # Bluetooth
@@ -11,10 +12,3 @@ permalink: /programming/bluetooth
 
 
 ## Our API
-
-
-{% for article in site.articles -%}
-    
-    {{article.content | strip_html | strip_newlines | jsonify | markdownify}}
-
-{%- endfor -%}

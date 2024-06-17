@@ -8,7 +8,7 @@
             for (var i = 0; i < results.length; i++) {
                 var item = store[results[i].ref];
                 resultsString += "<li><a href=\"" + item.url + "\"><h3>" + item.title + "</h3></a>";
-                resultsString += "<p>" + item.content.substring(0, 50) + "...</p></li>";
+                resultsString += "<p>" + item.content.substring(0, 75) + "...</p></li>";
             }
 
             searchResultsDispLoc.innerHTML = resultsString;
