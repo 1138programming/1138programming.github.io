@@ -27,7 +27,7 @@ remote_theme: carlosperate/jekyll-theme-rtd
 plugins:
   - jekyll-remote-theme
 
-search_enabled: false
+search_enabled: true
 edit_on_github: false
 hljs_style: atelier-cave-dark
 repo_url: https://github.com/1138programming/1138programming.github.io
@@ -40,11 +40,10 @@ collections:
 
 defaults:
   -scope:
-    type: articles
     path: "_articles"
 
 include:
-  - articles
+  - _articles
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

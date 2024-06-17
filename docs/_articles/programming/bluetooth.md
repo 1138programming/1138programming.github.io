@@ -2,7 +2,7 @@
 layout: default
 title:  Bluetooth
 nav_order: 2
-
+permalink: /programming/bluetooth
 ---
 
 # Bluetooth
@@ -12,6 +12,9 @@ nav_order: 2
 
 ## Our API
 
-{% for post in site.title %}
-    {{post}}
-{% endfor %}
+
+{% for article in site.articles -%}
+    
+    {{article.content | strip_html | strip_newlines | jsonify | markdownify}}
+
+{%- endfor -%}

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: What is All This? (FAQs)
+permalink: /
 nav_order: 0
 ---
 

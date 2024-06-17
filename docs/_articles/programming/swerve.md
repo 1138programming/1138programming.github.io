@@ -1,6 +1,7 @@
 ---
 layout: base
 title:  Swerve
+permalink: /programming/swerve
 nav_order: 1
 ---
 # Swerve
