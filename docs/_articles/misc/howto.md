@@ -44,17 +44,18 @@ You can create headings with the pound sign`#` followed by a space. It is recome
 <br>
 For example:
 <br>
+
 <br>
 `# big heading`
 <br>
 
-# Big Heading
+<p style="font-size:34px;"><b> Big Heading </b></p> 
 
 <br>
 `# Smaller heading`
 <br>
 
-# Smaller Heading
+<p style="font-size:30px;"><b> Smaller Heading </b></p> 
 
 <br>
 
