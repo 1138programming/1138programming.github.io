@@ -20,7 +20,7 @@ All articles must start with something called `front matter`, which describes to
     nav_order: 2
     ---
 ```
-It's pretty simple, and most of it is really just copy and paste. It starts and ends with 3 hyphens "`---`" and has some tags describing the site and how it should look.
+It's pretty simple, and most of it is really just copy and paste. It starts and ends with 3 hyphens "---" and has some tags describing the site and how it should look.
 
 Here's a description of those tags:
 - `layout`: tells the site which layout to use. As of now, there is only **default**, but more may be added in the future.
@@ -34,6 +34,10 @@ Here's a description of those tags:
 
 See [this link](/misc/allTags.html) for all other possible tags
 
-The rest of the page after the front matter is written in markdown, which is a text format that allows for some ways to *spice up* your text. (Fun fact: If you've **bolded** or used *italics* in Discord or Ryver, you were using markdown syntax!). Anyway, it's not difficult, and you can check out [this link](https://markdownguide.offshoot.io/basic-syntax/) for help with the basic syntax, or [this link](/misc/advancedHowto.html) if you think you're ready for something more advanced.
+The rest of the page after the front matter is written in markdown, which is a text format that allows for some ways to *spice up* your text. (Fun fact: If you've **bolded** or used *italics* in Discord or Ryver, you were using markdown syntax!). Anyway, it's not difficult, and you can check out [The Basic Markdown Syntax Guide](https://markdownguide.offshoot.io/basic-syntax/) for help with the basic syntax, or [AdvancedHowTo](/misc/advancedHowto.html) if you think you're ready for something more advanced.
+
+
+
+
 
 <h2 style="color:magenta"> Good luck! </h2>
