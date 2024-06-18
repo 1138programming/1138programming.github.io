@@ -3,7 +3,7 @@ layout: default
 title: How to write an article
 author: Joshua Duross, Thomas Evans
 permalink: /misc/howto.html
-nav_exclude: true
+nav_order: 1
 ---
 
 # How to write an article
@@ -37,26 +37,26 @@ Here's a description of those tags:
 See [this link](/misc/allTags.html) for all other possible tags
 
 The rest of the page after the front matter is written in markdown, which is a text format that allows for some ways to *spice up* your text. (Fun fact: If you've **bolded** or used *italics* in Discord or Ryver, you were using markdown syntax!). You can also add bullets points with hyphens `-` and numbered lists with numbers followed by periods `1. 2.` ect.
+<br> 
 <br>
-You can create headings with the pound sign`#` followed by a space. It is recomended to add blank lines before and after. Using more pound signs will decrease the size of the headings to a max of six.
-
+You can create headings with the pound sign`#` followed by a space. It is recomended to add blank lines before and after. Using more pound signs will decrease the size of the headings to a max of six. You should add a heading at the beginning of your article.
+<br>
+<br>
 For example:
->```
->
-># big heading
->
->```
-># Big Heading
+<br>
+<br>
+`# big heading`
 <br>
 
->```
->
-># Smaller heading
->
->```
-># Smaller Heading
+# Big Heading
 
+<br>
+`# Smaller heading`
+<br>
 
+# Smaller Heading
+
+<br>
 
 Anyway, it's not difficult, and you can check out [The Basic Markdown Syntax Guide](https://markdownguide.offshoot.io/basic-syntax/) for help with the basic syntax, or [AdvancedHowTo](/misc/advancedHowto.html) if you think you're ready for something more advanced.
 
