@@ -1,8 +1,26 @@
 ---
 layout: default
 ---
-<textarea id="w3review" rows="4" cols="50">
-    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-</textarea>
+<textarea id="userCodeBox" rows="4" cols="50" placeholder="Insert code here"></textarea>
+<button id="userCodeSubmit" onclick="buttonSubmit()"> Submit </button>
+<hr>
 
-<div id="userSite"></div>
+<span id="userSite"></span>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+<script>
+    function buttonSubmit() {
+        var codeBox = document.getElementById("userCodeBox");
+        var target = document.getElementById("userSite");
+        var converter = new showdown.Converter();
+        target.innerHTML = converter.makeHtml(codeBox.value);
+    }
+</script>
+<style>
+    #userCodeBox {
+        background-color: #333;
+        color: white;
+        resize: vertical;
+        placeholder: aaa;
+    }
+</style>
