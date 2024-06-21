@@ -6,7 +6,7 @@
             var resultsString = '';
 
             for (var i = 0; i < results.length; i++) {
-                var item = store[results[i].ref];
+                var item = store[results[i]];
                 resultsString += "<li><a href=\"" + item.url + "\"><h3>" + item.title + "</h3></a>";
                 resultsString += "<p>" + item.content.substring(0, 75) + "...</p></li>";
             }
@@ -24,24 +24,44 @@
 
     var searchTerm = getQueryText();
 
-    if (searchTerm) {
-        var index = lunr(function() {
-            this.field('id');
-            this.field('title', {boost: 10});
-            this.field('author');
-            this.field('content');
+    // if (searchTerm) {
+    //     var index = lunr(function() {
+    //         this.field('id');
+    //         this.field('title', {boost: 10});
+    //         this.field('author');
+    //         this.field('content');
 
-            for (var key in window.store) {
-                this.add({
-                    'id':key,
-                    'title':window.store[key].title,
-                    'author':window.store[key].author,
-                    'content':window.store[key].content
-                });
+    //         for (var key in window.store) {
+    //             this.add({
+    //                 'id':key,
+    //                 'title':window.store[key].title,
+    //                 'author':window.store[key].author,
+    //                 'content':window.store[key].content
+    //             });
+    //         }
+    //         });
+
+        // var results = index.search(searchTerm);  
+        var results = [];
+        
+        if (searchTerm) {
+         
+            for (var key in window.store) { 
+                console.log(":C");
+                if (searchTerm.includes(window.store[key].title) ||
+                searchTerm.includes(window.store[key].author)) {
+
+                    results.push(key);
+                    
+
+                }
+
+
+
+
             }
-            });
+        } 
 
-        var results = index.search(searchTerm);
-        displaySearchResults(results, window.store);
-    }
+        displaySearchResults(results);
+    
 })();
