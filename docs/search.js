@@ -6,8 +6,8 @@
             var resultsString = '';
 
             for (var i = 0; i < results.length; i++) {
-                var item = store[results[i]];
-                resultsString += "<li><a href=\"" + item.url + "\"><h3>" + item.title + "</h3></a>";
+                var item = window.store[results[i]];
+                resultsString += "<li><h3><a href=\"" + item.url + "\">" + item.title + "</a></h3>";
                 resultsString += "<p>" + item.content.substring(0, 75) + "...</p></li>";
             }
 
@@ -47,18 +47,10 @@
         if (searchTerm) {
          
             for (var key in window.store) { 
-                console.log(":C");
-                if (searchTerm.includes(window.store[key].title) ||
-                searchTerm.includes(window.store[key].author)) {
-
+                console.log(window.store[key].title);
+                if (window.store[key].title.toLowerCase().includes(searchTerm.toLowerCase()) || window.store[key].author.toLowerCase().includes(searchTerm.toLowerCase())) {
                     results.push(key);
-                    
-
                 }
-
-
-
-
             }
         } 
 
