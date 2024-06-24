@@ -10,7 +10,7 @@ nav_order: 1
 ## Creating and Uploading G-Code in Carbide Create
 
 ### 1. Design Your Part
-Creating a New Design
+Creating a New Design <br>
 a. **Set Up Your Material**:
 - Go to the "Job Setup" menu to define the size and thickness of your material.
 - Specify the material type to help Carbide Create optimize the toolpath.
