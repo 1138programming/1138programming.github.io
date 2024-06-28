@@ -3,7 +3,7 @@ layout: default
 title:  Bluetooth
 author: Joshua Duross
 permalink: /programming/bluetooth.html
-nav_order: 2
+nav_order: 3
 ---
 
 # Bluetooth
