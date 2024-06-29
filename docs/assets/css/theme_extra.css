@@ -145,6 +145,9 @@ td, th {
 #pageBody {
     background-color: #151515;
 }
+#mobilePageBody {
+    background-color: #151515;
+}
 #navbar {
     border-width: 1px;
     border-color: white;
