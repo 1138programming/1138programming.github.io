@@ -1,9 +1,9 @@
 ---
 layout: default
 title:  Launchers
-author: Breana Sanders
+author: Breanna Sanders
 permalink: /design/launchers.html
-nav_order: 3
+nav_order: 1
 ---
 
 # Launchers:
