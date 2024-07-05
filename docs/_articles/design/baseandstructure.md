@@ -49,7 +49,7 @@ Cons
 * Costs can range from $20 to $50
 * Can get pieces of carpet stuck in the rollers
 
-![](/images/omni.png)
+![](/images/Omni.png)
 
 Omni wheel from REV Robotics
 ### Mecanum Wheel
