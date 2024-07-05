@@ -11,6 +11,8 @@ nav_order: 4
 
 The storage is the secondary holding place after the robot has gained control of the game object whereas the indexer is the funneling system from the storage to the shooter. Essentially the pathways goes from:
 
+![](/images/image1.png)
+
 An easy way to remember this is; the storage is the structure and the indexer is the final moving stage or used as a sorting function. In games where multiple game objects can be held, the storage will be used to hold those other objects not being shot as to avoid jamming. In a game with only one object available to be possessed at a time, the indexer can be used as a sort of funnel for an expedited transition between the two systems. For these reasons, storages and indexers aren’t always necessary to be used together.
 
 ## ***Common Types:***
