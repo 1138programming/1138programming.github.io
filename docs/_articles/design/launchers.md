@@ -17,10 +17,12 @@ nav_order: 1
 * Hex bearings: have a tendency to not be as sturdy for fast speed forces or else use https://www.mcmaster.com/6138K15/  
 * Thunderhex or round bearings: have better stabillity 6
     * For more information on thunderhex see the following
-https://www.chiefdelphi.com/t/thunderhex-bearing-explained/139200 
-https://www.vexrobotics.com/thunderhexstock.html 
-https://www.youtube.com/watch?v=brvcMzULraw 
+[Chief Delphi](https://www.chiefdelphi.com/t/thunderhex-bearing-explained/139200),
+[Vex Robotics](https://www.vexrobotics.com/thunderhexstock.html),
+1712 Example: 
 
+
+        [![Video Title](https://img.youtube.com/vi/brvcMzULraw/0.jpg)](https://www.youtube.com/watch?v=brvcMzULraw)
 
 	
 Contacts item -> needs some time to catch up to speed -> add more wheels so it has contact for longer -> Flywheel shoots -> some energy goes to the object shot -> To stop, increase the motor power or the momentum (mass) (not always needed though, especially for small distances)
@@ -28,7 +30,7 @@ Contacts item -> needs some time to catch up to speed -> add more wheels so it h
 Compression: is the amount something is “squished” -> try designing for adistablility since it will require lots of testing. Must find the sweet spot. 
 Increasing the amount of squish increases the acceleration that an object has from the flywheel.
 
-To change accuracy: 
+**To change accuracy:** 
 * Add backspin by adding another roller or get rid of it all together 
 Look into when it lands how does it bounce. 
 
@@ -88,7 +90,9 @@ There are a variety of pull back mechanisms such as
 Ball Screw pulling back shooter plate to launch 
 Chain pulling back shooter plate to the desired position 
 ### Pneumatic Linear Punch
-Pneumatic actuators push something out of the robot. Here is an example of how it is used: https://www.youtube.com/watch?v=bFiySP0L6o4&t=19s 
+Pneumatic actuators push something out of the robot. Here is an example of how it is used: 
+
+[![IMAGE ALT TEXT HERE](/images/redbacks.jpg)](https://www.youtube.com/watch?v=bFiySP0L6o4&t=19s)
 
 
 Equations of force and energy (Robert)
