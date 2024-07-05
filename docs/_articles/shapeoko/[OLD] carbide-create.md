@@ -2,8 +2,8 @@
 layout: default
 title: 'Shapeoko Basics: Carbide Create'
 author: Viren Sharma
-permalink: /shapeoko/carbide-create.html
-nav_order: 1
+permalink: /shapeoko/[OLD]-carbide-create.html
+nav_exclude: true
 ---
 # Shapeoko Basics: Carbide Create
 
