@@ -2,7 +2,7 @@
 layout: default
 title: Bases
 author: Joshua Guerra
-permalink: /design/Bases.html
+permalink: /design/Base.html
 nav_order: 2
 ---
 
