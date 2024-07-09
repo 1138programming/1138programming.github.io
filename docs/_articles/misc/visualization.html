@@ -14,7 +14,9 @@ permalink: /misc/visualization.html
     window.addEventListener("load", populateTextarea);
     function populateTextarea() {
         var codeBox = document.getElementById("userCodeBox");
-        codeBox.value = decodeURIComponent(getCookie("visualizationText"));
+        if (getCookie("visualizationText") != "undefined") {
+            codeBox.value = decodeURIComponent(getCookie("visualizationText"));
+        }
         buttonSubmit();
     }
     function buttonSubmit() {
