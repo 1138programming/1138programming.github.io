@@ -11,18 +11,33 @@ permalink: /misc/visualization.html
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
 <script>
+    window.addEventListener("load", populateTextarea);
+    function populateTextarea() {
+        var codeBox = document.getElementById("userCodeBox");
+        codeBox.value = decodeURIComponent(getCookie("visualizationText"));
+        buttonSubmit();
+    }
     function buttonSubmit() {
         var codeBox = document.getElementById("userCodeBox");
         var target = document.getElementById("userSite");
         var converter = new showdown.Converter();
         target.innerHTML = converter.makeHtml(codeBox.value);
+        setCookie("visualizationText", encodeURIComponent(codeBox.value), 7);
+        console.log(getCookie("visualizationText"));
+    }
+    function setCookie(cookieName, cookieValue, daysToExpire) {
+        var date = new Date();
+        date.setTime(date.getTime() + (daysToExpire * 1000 * 60 * 60 * 24)); //originally in ms
+        document.cookie = cookieName + '=' + cookieValue + ';' + 'expires=' + date.toUTCString() + ";path=/";
+    }
+    function getCookie(cookieName) {
+        let name = cookieName + '=';
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookiePart = cookies[i];
+            if (cookiePart.includes(name)) {
+                return cookiePart.substring(cookiePart.indexOf(name) + name.length, cookiePart.length);
+            }
+        }
     }
 </script>
-<style>
-    #userCodeBox {
-        background-color: #333;
-        color: white;
-        resize: vertical;
-        placeholder: aaa;
-    }
-</style>
