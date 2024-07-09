@@ -24,7 +24,7 @@ permalink: /misc/visualization.html
         var target = document.getElementById("userSite");
         var converter = new showdown.Converter();
         target.innerHTML = converter.makeHtml(codeBox.value);
-        setCookie("visualizationText", encodeURIComponent(codeBox.value), 7);
+        setCookie("visualizationText", encodeURIComponent(codeBox.value), 21);
     }
     function setCookie(cookieName, cookieValue, daysToExpire) {
         var date = new Date();
