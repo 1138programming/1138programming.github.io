@@ -14,5 +14,5 @@ If you are looking to learn Java there are a number of resources available to le
 
 You can find our old robot code here at our [Frc Github Repo](https://github.com/1138programming/2024-FRC-Robot)
 
-If you want more practice you can find programming challenges at [Lettcode](https://leetcode.com/) and [CodingBat](https://codingbat.com/java)
+If you want more practice you can find programming challenges at [Leetcode](https://leetcode.com/) and [CodingBat](https://codingbat.com/java)
 
