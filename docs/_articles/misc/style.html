@@ -21,6 +21,8 @@ nav_exclude: true
         // style.type = "text/css";
         // style.cssText = textReplace;
         // document.getElementsByTagName("head")[0].append(style);
-        document.getElementById("test").style = document.getElementById("userStyling").value;
+        document.getElementById("customStyle").innerHTML = document.getElementById("userStyling").value;
     }
 </script>
+
+<style id="customStyle"></style>
