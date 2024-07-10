@@ -161,3 +161,7 @@ td, th {
     float:right;
     padding: 5px;
 }
+
+.caption {
+    color: #11a9f0;
+}
