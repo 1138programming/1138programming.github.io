@@ -1,0 +1,26 @@
+---
+layout: default
+title: Style
+author: Joshua Duross
+permalink: /misc/style.html
+nav_exclude: true
+---
+
+<textarea id="userStyling" placeholder="Insert styling here"></textarea>
+
+<button onclick="updateStyle()">Submit</button>
+
+<p id="test">test</p>
+
+<script>
+    function updateStyle() {
+        // var style = document.createElement("style");
+        // var textReplace = document.getElementById("userStyling").value;
+        // console.log(textReplace);
+
+        // style.type = "text/css";
+        // style.cssText = textReplace;
+        // document.getElementsByTagName("head")[0].append(style);
+        document.getElementById("test").style = document.getElementById("userStyling").value;
+    }
+</script>
