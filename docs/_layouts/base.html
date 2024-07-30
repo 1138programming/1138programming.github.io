@@ -77,6 +77,7 @@
 
   {% include versions.html %}
 
+  <!--Default scripts-->
   <script>var base_url = '{{ baseurl }}';</script>
   <script src="{{ 'assets/js/jquery-2.1.1.min.js' | absolute_url }}" defer></script>
   <script src="{{ 'assets/js/modernizr-2.8.3.min.js' | absolute_url }}" defer></script>
@@ -89,5 +90,13 @@
     });
   </script>
   <!-- Build Date: {{ site.time | date: "%Y-%m-%d %H:%M" }} -->
+
+  <!--Our scripts-->
+  <script src="../js/customMarkdown.js" defer></script>
+  <!-- <script>
+    documentTxt = document.getElementById("compiledMarkdownDiv").innerText;
+    console.log(documentTxt);
+    //console.log("{{page | escape | newline_to_br | strip_newlines }}");
+  </script> -->
 </body>
 </html>

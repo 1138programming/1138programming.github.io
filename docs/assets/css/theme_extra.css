@@ -165,3 +165,18 @@ td, th {
 .caption {
     color: #11a9f0;
 }
+
+.note {
+    color:black;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffcc !important;
+    border-left: 6px solid #ffeb3b !important;
+    padding-inline-start: 1%;
+    padding-block-start: 1%;
+    width: 75%;
+}
+.note .noteTitle {
+    font-size: larger;
+}
