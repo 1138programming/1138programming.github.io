@@ -176,6 +176,7 @@ td, th {
     padding-inline-start: 1%;
     padding-block-start: 1%;
     width: 75%;
+    word-wrap: break-word;
 }
 .note .noteTitle {
     font-size: larger;
