@@ -38,10 +38,13 @@ customMarkdownsArr.push(new beginningLineMarkdown("!!i ", noteInfoCallback));
 
 var documentTxts = document.getElementById("compiledMarkdownDiv").getElementsByTagName("p");
 
-for(let i of documentTxts) {
-    for (let j of customMarkdownsArr) {
-        if (j.matches(i.innerHTML)) {
-            i.innerHTML = j.replace(i.innerHTML);
+function loadCustomMarkdown() {
+    for(let i of documentTxts) {
+        for (let j of customMarkdownsArr) {
+            if (j.matches(i.innerHTML)) {
+                i.innerHTML = j.replace(i.innerHTML);
+            }
         }
     }
 }
+loadCustomMarkdown(); // always call on beginning of page.
