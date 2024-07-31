@@ -181,7 +181,7 @@ td, th {
 }
 
 .note.yellow {
-    background-color: #5a3b22 !important;
+    background-color: #7e522ecc !important;
     border-left: 6px solid #f9903b !important;
 }
 .note.yellow .noteSeperator {
@@ -189,7 +189,7 @@ td, th {
 }
 
 .note.red {
-    background-color: #650102 !important;
+    background-color: #6e1b1ccc !important;
     border-left: 6px solid #CC0203 !important;
 }
 .note.red .noteSeperator {
@@ -197,7 +197,7 @@ td, th {
 }
 
 .note.blue {
-    background-color: #0a4c89 !important;
+    background-color: #1e5180cc !important;
     border-left: 6px solid #11a9f0 !important;
 }
 .note.blue .noteSeperator {
