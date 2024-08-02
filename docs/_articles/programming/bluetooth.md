@@ -16,9 +16,9 @@ Bluetooth is a complicated piece of technology, and even with me working with it
 
 ### Background Info
 
-To simplify the process of dealing with Bluetooth for our scouting purposes, we have created a simple wrapper on top of the Windows Bluetooth API. The main file, at least on the main computer, is `bluetooth.hpp`. This file handles many things such as initializing and connecting sockets, and may get condensed in the future. For now, though, the main function you will have to worry about is `handleReadyConnections()`, and even more specifically, the part that says `// ___ read from all sockets connected ___` 
+To simplify the process of dealing with Bluetooth for our scouting purposes, we have created a simple wrapper on top of the Windows Bluetooth API. The main file, at least on the main computer, is `bluetooth.hpp`. This file handles many things such as initializing and connecting sockets, and may get condensed in the future. For now, though, the main function you will have to worry about is `handleReadyConnections()`, and even more specifically, the part that says `// ___ read from all sockets connected ___`
 <sup>
-(If you would like to go more in depth, you can continue on to the 
+(If you would like to go more in depth, you can continue on to the
 <a href="#win-api"> Windows API </a>
  section)
 </sup>
@@ -35,15 +35,15 @@ Data is obtained from the socket using the `readTabletData()` function in the `b
 - A `bool`, ***reportedSuccess***, which is true (or false) based on whether getting the data succeded. Note that calling this before calling `.get()` ***WILL*** cause undefined behaviour.
 - a `function`, ***isReady()***, which, when in async mode, tells you if the funcion has finished. If the function was called using the deferred option, this will always return true.
 
-So, what is this `std::future` thing, and why do I keep taling about the `.get()` function? Well, std::future is a class that allows you to call a function, and possibly have it run in the background 
+So, what is this `std::future` thing, and why do I keep taling about the `.get()` function? Well, std::future is a class that allows you to call a function, and possibly have it run in the background
 <sup>(if you use the async calltype)</sup>
 , where you can then use the `.get()` function to actually get the result later. So in our bluetooth code, the `.get()` function on ***data*** would return an `std::vector<char>`. The benefit of this is that we can have the option to have the bluetooth code run in the background (communicating to possibly multiple tablets at a time), while the frontend can continue working in the same way as it normally does, without it freezing up. We can also handle the data when it is convenient to us, rather than immediately.
 
 <h2 id="win-api">Windows API</h2>
 Though it has been the goal to keep things fairly surface-level to use, there are probably going to be things that you will need the Windows *Winsock* API for, especially if you need to edit anything about these two classes. When working with Winsock, the [documentation link](https://learn.microsoft.com/en-us/windows/win32/winsock/getting-started-with-winsock) (check the search bar on the left), and especially the [winsock error codes page](https://learn.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2) will be your friends.
 
-Our code is also fairly well commented, so you can try reading the comments on [our code](https://github.com/1138programming/QrCodesCPPTesting/blob/main/src/myincludes/bluetooth.hpp) if you get stuck. 
+Our code is also fairly well commented, so you can try reading the comments on [our code](https://github.com/1138programming/QrCodesCPPTesting/blob/main/src/myincludes/bluetooth.hpp) if you get stuck.
 
-<p style="color:red">Note:</p> we put all of the Winsock bluetooth functions in the `bt` [namespace](https://www.geeksforgeeks.org/namespace-in-c/?ref=lbp), so prepend all the functions with `bt::`.
+!! We put all of the Winsock bluetooth functions in the `bt` [namespace](https://www.geeksforgeeks.org/namespace-in-c/?ref=lbp), so make sure to prepend all functions with `bt::`.
 
 GL!
