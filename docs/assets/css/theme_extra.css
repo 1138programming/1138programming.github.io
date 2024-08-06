@@ -161,3 +161,45 @@ td, th {
     float:right;
     padding: 5px;
 }
+
+.caption {
+    color: #11a9f0;
+}
+
+.note {
+    color:white;
+    margin-bottom: 5px;
+    margin-left: auto; /*centered*/
+    margin-right: auto;
+    padding-inline-start: 1%;
+    padding-block-start: 1%;
+    width: 75%;
+    word-wrap: break-word;
+}
+.note .noteTitle {
+    font-size: larger;
+}
+
+.note.yellow {
+    background-color: #7e522ecc !important;
+    border-left: 6px solid #f9903b !important;
+}
+.note.yellow .noteSeperator {
+    border-top: 1px solid #f9903b !important;
+}
+
+.note.red {
+    background-color: #6e1b1ccc !important;
+    border-left: 6px solid #CC0203 !important;
+}
+.note.red .noteSeperator {
+    border-top: 1px solid #CC0203 !important;
+}
+
+.note.blue {
+    background-color: #1e5180cc !important;
+    border-left: 6px solid #11a9f0 !important;
+}
+.note.blue .noteSeperator {
+    border-top: 1px solid #11a9f0 !important;
+}

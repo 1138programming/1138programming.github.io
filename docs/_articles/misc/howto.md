@@ -59,6 +59,14 @@ For example:
 
 <br>
 
+A new ___-IN TESTING-___ feature added recently is notes, which can be used by adding a `!! ` at the _beginning_ of the line. This syntax is subject to change, but currently you have to make sure you add a space after the exclamation points, as it will not work otherwise. A note looks like this:
+
+!! This is a note!<br>It also still supports [links](https://youtu.be/dQw4w9WgXcQ) and ___formatting___!
+
+!!i You can also append the letters _w_ or _i_ right after the exclamation marks to get different types of notes, like this.
+
+To create seperate lines with notes, you _must_ use the HTML `<br>`, tag, otherwise it will not work.
+
 Anyway, it's not difficult, and you can check out [The Basic Markdown Syntax Guide](https://markdownguide.offshoot.io/basic-syntax/) for help with the basic syntax, or [AdvancedHowTo](/misc/advancedHowto.html) if you think you're ready for something more advanced.
 
 
