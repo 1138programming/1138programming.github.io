@@ -1,0 +1,28 @@
+---
+layout: default
+title: Data Visualization
+author: Joshua Duross
+permalink: /misc/dataVis.html
+nav_exclude: true
+---
+<div id="fileRendering" style="display: none;">
+    <p id="fileText"></p>
+    <hr>
+</div>
+
+
+<input type="file" id="myFile">
+
+<button onclick="renderFileText()">Load</button>
+
+<script>
+    function renderFileText() {
+        var file = document.getElementById("myFile").files[0];
+
+        var fileReader = new FileReader();
+        fileReader.onload = ()=> {
+            document.getElementById("fileText").innerText = fileReader.result;
+        };
+        fileReader.readAsText(file);
+    }
+</script>
