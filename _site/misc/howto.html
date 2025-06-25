@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<h1 id="welcome-to-the-1138-wiki">Welcome to the 1138 Wiki!</h1>
+  <meta name="description" content="<h1 id="how-to-write-an-article">How to write an article</h1>
 ">
   
   <meta name="author" content="Team 1138">
@@ -13,7 +13,7 @@
 
   <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
 
-  <title>Welcome! - Team 1138 Wiki</title>
+  <title>How to write an article - Team 1138 Wiki</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
   <link rel="stylesheet" href="http://localhost:4000/assets/css/theme.css" />
@@ -36,14 +36,12 @@
         </div>
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          <ul>
-  <li class="toctree-l1 current"><a href="#welcome-to-the-1138-wiki">Welcome to the 1138 Wiki!</a>
-    <ul>
-      <li class="toctree-l2"><a href="#tutorials">Tutorials</a></li>
-    </ul>
-  </li>
-</ul>
-
+          
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/">Welcome!</a>
+                    </li>
+                </ul>
     <p class="caption"><span class="caption-text">design</span></p>
                 <ul>
                     <li class="toctree-l1">
@@ -65,12 +63,14 @@
                         <a class="reference internal" href="http://localhost:4000/design/IndexersandStorages.html">Indexers and Storages</a>
                     </li>
                 </ul>
-    <p class="caption"><span class="caption-text">misc</span></p>
-                <ul>
-                    <li class="toctree-l1">
-                        <a class="reference internal" href="http://localhost:4000/misc/howto.html">How to write an article</a>
-                    </li>
-                </ul>
+    <p class="caption"><span class="caption-text">misc</span></p><ul>
+  <li class="toctree-l1 current"><a href="#how-to-write-an-article">How to write an article</a>
+    <ul>
+      <li class="toctree-l2"><a href="#"> Good luck! </a></li>
+    </ul>
+  </li>
+</ul>
+
     <p class="caption"><span class="caption-text">programming</span></p>
                 <ul>
                     <li class="toctree-l1">
@@ -122,9 +122,9 @@
           <div role="navigation" aria-label="breadcrumbs navigation">
     <ul class="wy-breadcrumbs">
           <li><a href="http://localhost:4000">Docs</a>&raquo;</li>
-          <li>Welcome!</li>
+          <li>How to write an article</li>
       <li class="author-name">
-        
+         By: Joshua Duross, Thomas Evans </p> 
       </li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -133,17 +133,74 @@
   </div>
           <div role="main">
             <div class="section" id="compiledMarkdownDiv">
-              <h1 id="welcome-to-the-1138-wiki">Welcome to the 1138 Wiki!</h1>
+              <h1 id="how-to-write-an-article">How to write an article</h1>
 
-<h2 id="tutorials">Tutorials</h2>
+<p>Writing an article is fairly straightforward, but there are a couple things that you need to know:</p>
 
-<p>If you’re thinking of becoming a programmer, start <a href="/programming/swerve.html">here</a></p>
+<p>All articles must start with something called <code class="language-plaintext highlighter-rouge">front matter</code>, which describes to our site how the page should be categorized. For our site, it should look something like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ---
+    layout: default
+    title:  Bluetooth
+    author: Joshua Duross
+    permalink: /programming/bluetooth.html
+    nav_order: 2
+    ---
+</code></pre></div></div>
+<p>It’s fairly straightforward, and most of it is really just copy and paste. It starts and ends with 
+<br />
+3 hyphens “<code class="language-plaintext highlighter-rouge">---</code>” and has some tags describing the site and how it should look.</p>
 
-<p>If you need to write an article, check out <a href="/misc/howto.html">this link</a></p>
+<p>Here’s a description of those tags:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">layout</code>: tells the site which layout to use. As of now, there is only <strong>default</strong>, but more may be added in the future.</li>
+  <li><code class="language-plaintext highlighter-rouge">title</code>: The short-version title of your Documentation Page. This is only shown to the user at the top “breadcrumb” bar, but most importantly used in the <strong>search</strong> functionality (So keep it short and sweet!)</li>
+  <li><code class="language-plaintext highlighter-rouge">author</code>: The First and Last name of the author(s) of the page. Currently it is only used in the search functionality, but may be used for other purposes later. If there are multiple authors, separate the names with commas.</li>
+  <li><code class="language-plaintext highlighter-rouge">permalink</code>: The link (at the top of the site) at which this file is displayed. This one is a bit more complicated, but shouldn’t be too bad. It is important to note:
+    <ul>
+      <li>This is the only <strong><em>NECESSARY</em></strong> tag, as without it the site will not recognize your page.</li>
+      <li>This should probably be very similar to something like in the example, ex: <code class="language-plaintext highlighter-rouge">/[subsystem-name]/[article-name].html</code>.</li>
+      <li>If you need any help, ask one of us programmers, we should be able to help!</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">nav_order</code>: The last one that most people will need to use, tells the site which order to put the articles in. For example: For this example article, it would be the second article shown under the <strong>Programming</strong> tab.</li>
+</ul>
 
-<p>If you’re making an article and want a preview of how it <em>may</em> look, check out our <a href="/misc/visualization.html">Page preview</a></p>
+<p>See <a href="/misc/allTags.html">this link</a> for all other possible tags</p>
 
-<p>That’s all for now!</p>
+<p>The rest of the page after the front matter is written in markdown, which is a text format that allows for some ways to <em>spice up</em> your text. (Fun fact: If you’ve <strong>bolded</strong> or used <em>italics</em> in Discord or Ryver, you were using markdown syntax!). You can also add bullets points with hyphens <code class="language-plaintext highlighter-rouge">-</code> and numbered lists with numbers followed by periods <code class="language-plaintext highlighter-rouge">1. 2.</code> ect.
+<br /> 
+<br />
+You can create headings with the pound sign<code class="language-plaintext highlighter-rouge">#</code> followed by a space. It is recommended to add blank lines before and after. Using more pound signs will decrease the size of the headings to a max of six. You should add a heading at the beginning of your article.
+<br />
+<br />
+For example:
+<br /></p>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge"># big heading</code>
+<br /></p>
+
+<p style="font-size:34px;"><b> Big Heading </b></p>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge"># Smaller heading</code>
+<br /></p>
+
+<p style="font-size:30px;"><b> Smaller Heading </b></p>
+
+<p><br /></p>
+
+<p>A new <strong><em>-IN TESTING-</em></strong> feature added recently is notes, which can be used by adding a <code class="language-plaintext highlighter-rouge">!! </code> at the <em>beginning</em> of the line. This syntax is subject to change, but currently you have to make sure you add a space after the exclamation points, as it will not work otherwise. A note looks like this:</p>
+
+<p>!! This is a note!<br />It also still supports <a href="https://youtu.be/dQw4w9WgXcQ">links</a> and <strong><em>formatting</em></strong>!</p>
+
+<p>!!i You can also append the letters <em>w</em> or <em>i</em> right after the exclamation marks to get different types of notes, like this.</p>
+
+<p>To create separate lines with notes, you <em>must</em> use the HTML <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code>, tag, otherwise it will not work.</p>
+
+<p>Anyway, it’s not difficult, and you can check out <a href="https://markdownguide.offshoot.io/basic-syntax/">The Basic Markdown Syntax Guide</a> for help with the basic syntax, or <a href="/misc/advancedHowto.html">AdvancedHowTo</a> if you think you’re ready for something more advanced.</p>
+
+<h2 style="color:magenta"> Good luck! </h2>
 
 
             </div>
@@ -151,7 +208,8 @@
           <br>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="http://localhost:4000/design/launchers.html" class="btn btn-neutral float-right" title="Launchers">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/programming/Neccessary_Software.html" class="btn btn-neutral float-right" title="Neccessary Software">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/design/IndexersandStorages.html" class="btn btn-neutral" title="Indexers and Storages"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
     <hr/>
@@ -177,7 +235,8 @@
   <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <a href="https://github.com/1138programming/1138programming.github.io" class="fa fa-github" target="_blank" style="float: left; color: #fcfcfc"> GitHub</a>
-        <span style="margin-left: 15px"><a href="http://localhost:4000/design/launchers.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span><a href="http://localhost:4000/design/IndexersandStorages.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span style="margin-left: 15px"><a href="http://localhost:4000/programming/Neccessary_Software.html" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 

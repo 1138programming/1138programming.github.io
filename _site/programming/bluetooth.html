@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<h1 id="bluetooth">Bluetooth</h1>
+">
+  
+  <meta name="author" content="Team 1138">
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
+
+  <title>Bluetooth - Team 1138 Wiki</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/theme.css" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-dark.min.css" />
+</head>
+
+<body class="wy-body-for-nav" role="document" id="pageBody">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" id="navbar" class="wy-nav-side stickynav">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="http://localhost:4000" class="icon icon-home"> Team 1138 Wiki</a>
+          <div role="search">
+    <form id ="rtd-search-form" class="wy-form" action="/search.html" method="get">
+      <input type="text" name="q" id="search-query" placeholder="Search docs" title="Type search term here" />
+    </form>
+  </div>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/">Welcome!</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">design</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/launchers.html">Launchers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/Base.html">Bases</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/Structure.html">Structure</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/IndexersandStorages.html">Indexers and Storages</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">misc</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/misc/howto.html">How to write an article</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">programming</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/Neccessary_Software.html">Neccessary Software</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/Java_Resources.html">Java Resources</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/swerve.html">Swerve</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/WPILIB_install.html">Install WPILIB (for personal computers)</a>
+                    </li>
+                </ul><ul>
+  <li class="toctree-l1 current"><a href="#bluetooth">Bluetooth</a>
+    <ul>
+      <li class="toctree-l2"><a href="#prologue">Prologue</a></li>
+      <li class="toctree-l2"><a href="#our-api">Our API</a>
+        <ul>
+          <li class="toctree-l3"><a href="#background-info">Background Info</a></li>
+          <li class="toctree-l3"><a href="#using-the-object">Using the Object</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#win-api">Windows API</a></li>
+    </ul>
+  </li>
+</ul>
+
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/github_and_version_control.html">Github and Version Control</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">shapeoko</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/shapeoko/carbide-create.html">Shapeoko Basics: Carbide Create</a>
+                    </li>
+                </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap" id="mobilePageBody">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="http://localhost:4000">Team 1138 Wiki</a>
+      </nav>
+      <div class="wy-nav-content" id="pageContentDiv">
+        <div class="rst-content" id="breadcrumbDiv">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+    <ul class="wy-breadcrumbs">
+          <li><a href="http://localhost:4000">Docs</a>&raquo;</li>
+          <li>Bluetooth</li>
+      <li class="author-name">
+         By: Joshua Duross </p> 
+      </li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+    </ul>
+    <hr>
+  </div>
+          <div role="main">
+            <div class="section" id="compiledMarkdownDiv">
+              <h1 id="bluetooth">Bluetooth</h1>
+
+<h2 id="prologue">Prologue</h2>
+
+<p>Bluetooth is a complicated piece of technology, and even with me working with it quite a bit throughout the course of the last year, I feel that I’ve still barely even cracked the surface with how much there is to know about it. Throughout this article, I will provide mainly just the basics for what you may need when using in the context of the scouting app, but will try my best to provide links to things for further learning. Note that these are not manditory to read, but optional, for if you may need to edit the underlying code or just want to learn more.</p>
+
+<h2 id="our-api">Our API</h2>
+
+<h3 id="background-info">Background Info</h3>
+
+<p>To simplify the process of dealing with Bluetooth for our scouting purposes, we have created a simple wrapper on top of the Windows Bluetooth API. The main file, at least on the main computer, is <code class="language-plaintext highlighter-rouge">bluetooth.hpp</code>. This file handles many things such as initializing and connecting sockets, and may get condensed in the future. For now, though, the main function you will have to worry about is <code class="language-plaintext highlighter-rouge">handleReadyConnections()</code>, and even more specifically, the part that says <code class="language-plaintext highlighter-rouge">// ___ read from all sockets connected ___</code>
+<sup>
+(If you would like to go more in depth, you can continue on to the
+<a href="#win-api"> Windows API </a>
+ section)
+</sup>
+. In <em>this</em> section, we create a <code class="language-plaintext highlighter-rouge">bthSocketHandler</code> object, which is what we should be working with in order to get data from the tablets. There are a couple things to note about this object:</p>
+<ul>
+  <li>The constructor requires a <code class="language-plaintext highlighter-rouge">bt::SOCKET</code> struct (a struct is very similar to an object, at least in C++). This is supplied by functions in the <code class="language-plaintext highlighter-rouge">bluetooth.hpp</code> class.</li>
+  <li>there are also a couple options that can be set to your preference:
+    <ul>
+      <li>the <code class="language-plaintext highlighter-rouge">setLaunchPolicy()</code> function takes a <code class="language-plaintext highlighter-rouge">bt::SOCKETCALLTYPE</code> enum, the options being <em>bt::CALLTYPE_ASYNCHRONOUS</em>, <em>bt::CALLTYPE_DEFERRED</em>, and <em>bt::CALLTYPE_DEFAULT</em>. As Bluetooth is a relatively expensive operation, this class allows bluetooth to be called in two different states: async and deferred. when this option is set to <em>bt::CALLTYPE_ASYNCHRONOUS</em>, code will be run immediately as it is called- on a different thread, while <em>bt::CALLTYPE_DEFERRED</em> will <em>defer</em> the call until <code class="language-plaintext highlighter-rouge">.get()</code> is called (which will be explained further later). <em>bt::CALLTYPE_DEFAULT</em> lets the OS choose whichever it prefers in the current moment.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="using-the-object">Using the Object</h3>
+
+<p>Data is obtained from the socket using the <code class="language-plaintext highlighter-rouge">readTabletData()</code> function in the <code class="language-plaintext highlighter-rouge">bthSocketHandler</code> class, which, instead of just returning the data, returns a <a href="https://www.geeksforgeeks.org/cpp-pointers/">pointer</a> to a <code class="language-plaintext highlighter-rouge">bt::READRES</code> struct. This struct contains a couple things:</p>
+<ul>
+  <li>A <code class="language-plaintext highlighter-rouge">bt::TRANSACTIONTYPE</code> called <strong><em>transactionType</em></strong>, which is an enum describing what type of data is being sent from the tablet.</li>
+  <li>An <code class="language-plaintext highlighter-rouge">std::future&lt;std::vector&lt;char&gt;&gt;</code> called <strong><em>data</em></strong>, which is where the data is stored.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">bool</code>, <strong><em>reportedSuccess</em></strong>, which is true (or false) based on whether getting the data succeded. Note that calling this before calling <code class="language-plaintext highlighter-rouge">.get()</code> <strong><em>WILL</em></strong> cause undefined behaviour.</li>
+  <li>a <code class="language-plaintext highlighter-rouge">function</code>, <strong><em>isReady()</em></strong>, which, when in async mode, tells you if the funcion has finished. If the function was called using the deferred option, this will always return true.</li>
+</ul>
+
+<p>So, what is this <code class="language-plaintext highlighter-rouge">std::future</code> thing, and why do I keep taling about the <code class="language-plaintext highlighter-rouge">.get()</code> function? Well, std::future is a class that allows you to call a function, and possibly have it run in the background
+<sup>(if you use the async calltype)</sup>
+, where you can then use the <code class="language-plaintext highlighter-rouge">.get()</code> function to actually get the result later. So in our bluetooth code, the <code class="language-plaintext highlighter-rouge">.get()</code> function on <strong><em>data</em></strong> would return an <code class="language-plaintext highlighter-rouge">std::vector&lt;char&gt;</code>. The benefit of this is that we can have the option to have the bluetooth code run in the background (communicating to possibly multiple tablets at a time), while the frontend can continue working in the same way as it normally does, without it freezing up. We can also handle the data when it is convenient to us, rather than immediately.</p>
+
+<h2 id="win-api">Windows API</h2>
+<p>Though it has been the goal to keep things fairly surface-level to use, there are probably going to be things that you will need the Windows <em>Winsock</em> API for, especially if you need to edit anything about these two classes. When working with Winsock, the <a href="https://learn.microsoft.com/en-us/windows/win32/winsock/getting-started-with-winsock">documentation link</a> (check the search bar on the left), and especially the <a href="https://learn.microsoft.com/en-us/windows/win32/winsock/windows-sockets-error-codes-2">winsock error codes page</a> will be your friends.</p>
+
+<p>Our code is also fairly well commented, so you can try reading the comments on <a href="https://github.com/1138programming/QrCodesCPPTesting/blob/main/src/myincludes/bluetooth.hpp">our code</a> if you get stuck.</p>
+
+<p>!! We put all of the Winsock bluetooth functions in the <code class="language-plaintext highlighter-rouge">bt</code> <a href="https://www.geeksforgeeks.org/namespace-in-c/?ref=lbp">namespace</a>, so make sure to prepend all functions with <code class="language-plaintext highlighter-rouge">bt::</code>.</p>
+
+<p>GL!</p>
+
+
+            </div>
+          </div>
+          <br>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="http://localhost:4000/programming/github_and_version_control.html" class="btn btn-neutral float-right" title="Github and Version Control">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/programming/WPILIB_install.html" class="btn btn-neutral" title="Install WPILIB (for personal computers)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+    <hr/>
+
+    <div role="contentinfo">
+      <p>
+          © Copyright 2025 Team 1138.
+      </p>
+    </div>
+    Built with
+    <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
+    using a <a href="https://github.com/carlosperate/jekyll-theme-rtd" target="_blank">theme</a>
+    based on <a href="https://sphinx-rtd-theme.readthedocs.io" target="_blank">Read the Docs</a>.
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <a href="https://github.com/1138programming/1138programming.github.io" class="fa fa-github" target="_blank" style="float: left; color: #fcfcfc"> GitHub</a>
+        <span><a href="http://localhost:4000/programming/WPILIB_install.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span style="margin-left: 15px"><a href="http://localhost:4000/programming/github_and_version_control.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+
+
+  <!--Default scripts-->
+  <script>var base_url = '';</script>
+  <script src="http://localhost:4000/assets/js/jquery-2.1.1.min.js" defer></script>
+  <script src="http://localhost:4000/assets/js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="http://localhost:4000/assets/js/theme.js" defer></script>
+  <script type="text/javascript" defer>
+    hljs.initHighlightingOnLoad();
+    window.addEventListener('load', function() {
+      SphinxRtdTheme.Navigation.enable(false);
+    });
+  </script>
+  <!-- Build Date: 2025-06-24 18:16 -->
+
+  <!--Our scripts-->
+  <script src="../js/customMarkdown.js" defer id="customMarkdownJsFileID" expiremental-enabled="false"></script>
+</body>
+</html>

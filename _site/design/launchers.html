@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<h1 id="launchers">Launchers:</h1>
+">
+  
+  <meta name="author" content="Team 1138">
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
+
+  <title>Launchers - Team 1138 Wiki</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/theme.css" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-dark.min.css" />
+</head>
+
+<body class="wy-body-for-nav" role="document" id="pageBody">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" id="navbar" class="wy-nav-side stickynav">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="http://localhost:4000" class="icon icon-home"> Team 1138 Wiki</a>
+          <div role="search">
+    <form id ="rtd-search-form" class="wy-form" action="/search.html" method="get">
+      <input type="text" name="q" id="search-query" placeholder="Search docs" title="Type search term here" />
+    </form>
+  </div>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/">Welcome!</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">design</span></p><ul>
+  <li class="toctree-l1 current"><a href="#launchers">Launchers:</a>
+    <ul>
+      <li class="toctree-l2"><a href="#flywheel">Flywheel</a>
+        <ul>
+          <li class="toctree-l3"><a href="#single-flywheel-shooter">Single Flywheel Shooter:</a></li>
+          <li class="toctree-l3"><a href="#dual-flywheel-shooter">Dual flywheel shooter:</a></li>
+          <li class="toctree-l3"><a href="#now-based-off-of-the-type-of-game-objects">Now based off of the type of game objects</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#catapult">Catapult</a>
+        <ul>
+          <li class="toctree-l3"><a href="#slip-gear-catapults">Slip Gear Catapults:</a></li>
+          <li class="toctree-l3"><a href="#drop-cam-catapult">Drop Cam Catapult</a></li>
+          <li class="toctree-l3"><a href="#choo-choo-catapult">Choo-choo catapult</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#linear-punchers-can-only-go-in-one-direction">Linear punchers (can only go in one direction)</a>
+        <ul>
+          <li class="toctree-l3"><a href="#spring-loaded-linear-puncher">Spring Loaded Linear Puncher</a></li>
+          <li class="toctree-l3"><a href="#pneumatic-linear-punch">Pneumatic Linear Punch</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#turrets">Turrets</a>
+        <ul>
+          <li class="toctree-l3"><a href="#turret-bearing-types">Turret bearing types</a></li>
+          <li class="toctree-l3"><a href="#turret-drive-types">Turret drive types</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/Base.html">Bases</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/Structure.html">Structure</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/IndexersandStorages.html">Indexers and Storages</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">misc</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/misc/howto.html">How to write an article</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">programming</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/Neccessary_Software.html">Neccessary Software</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/Java_Resources.html">Java Resources</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/swerve.html">Swerve</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/WPILIB_install.html">Install WPILIB (for personal computers)</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/bluetooth.html">Bluetooth</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/github_and_version_control.html">Github and Version Control</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">shapeoko</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/shapeoko/carbide-create.html">Shapeoko Basics: Carbide Create</a>
+                    </li>
+                </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap" id="mobilePageBody">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="http://localhost:4000">Team 1138 Wiki</a>
+      </nav>
+      <div class="wy-nav-content" id="pageContentDiv">
+        <div class="rst-content" id="breadcrumbDiv">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+    <ul class="wy-breadcrumbs">
+          <li><a href="http://localhost:4000">Docs</a>&raquo;</li>
+          <li>Launchers</li>
+      <li class="author-name">
+         By: Breanna Sanders </p> 
+      </li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+    </ul>
+    <hr>
+  </div>
+          <div role="main">
+            <div class="section" id="compiledMarkdownDiv">
+              <h1 id="launchers">Launchers:</h1>
+
+<h2 id="flywheel">Flywheel</h2>
+<ul>
+  <li>To increase the inertia of the system( the force acted upon and item) -&gt;need to increase the speed and/or mass of the wheel.</li>
+  <li>When a flywheel shoots -&gt; it slows down -&gt; it does not behave the same way as you may have intended or inaccurate
+    <ul>
+      <li>Can be solved by adding inertia to the system or pick the right motor () for the job.</li>
+      <li>However by adding speed it may not make the shooter perform in the intended way and weight is not always the best to add with the 120 weight limit -&gt; could add another wheel that is much faster to increase inertia and keep performance</li>
+    </ul>
+  </li>
+  <li>Mass at the edge of a wheel gives more inertia than towards the axis of rotation</li>
+  <li>Hex bearings: have a tendency to not be as sturdy for fast speed forces or else use https://www.mcmaster.com/6138K15/</li>
+  <li>Thunderhex or round bearings: have better stabillity 6
+    <ul>
+      <li>
+        <p>For more information on thunderhex see the following
+<a href="https://www.chiefdelphi.com/t/thunderhex-bearing-explained/139200">Chief Delphi</a>,
+<a href="https://www.vexrobotics.com/thunderhexstock.html">Vex Robotics</a>,
+1712 Example:</p>
+
+        <p><a href="https://www.youtube.com/watch?v=brvcMzULraw"><img src="https://img.youtube.com/vi/brvcMzULraw/0.jpg" alt="Video Title" /></a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Contacts item -&gt; needs some time to catch up to speed -&gt; add more wheels so it has contact for longer -&gt; Flywheel shoots -&gt; some energy goes to the object shot -&gt; To stop, increase the motor power or the momentum (mass) (not always needed though, especially for small distances)</p>
+
+<p>Compression: is the amount something is “squished” -&gt; try designing for adistablility since it will require lots of testing. Must find the sweet spot. 
+Increasing the amount of squish increases the acceleration that an object has from the flywheel.</p>
+
+<p><strong>To change accuracy:</strong></p>
+<ul>
+  <li>Add backspin by adding another roller or get rid of it all together 
+Look into when it lands how does it bounce.</li>
+</ul>
+
+<h3 id="single-flywheel-shooter">Single Flywheel Shooter:</h3>
+<ul>
+  <li>Shooter and shooter hood(to compress it)</li>
+  <li>Usually the most compact and easiest to make into a turret</li>
+</ul>
+
+<h3 id="dual-flywheel-shooter">Dual flywheel shooter:</h3>
+<ul>
+  <li>2 wheels that can be at different speeds and angles depending on the task(for example they could be at different angles to put some spin on a football)</li>
+  <li>Is best to link the two wheels with belts, chain, or gears</li>
+</ul>
+
+<h3 id="now-based-off-of-the-type-of-game-objects">Now based off of the type of game objects</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Description</th>
+      <th style="text-align: center">Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Small Balls</td>
+      <td style="text-align: center">Typically lighter and more of them to score -&gt; they can shoot faster -&gt; need faster flywheel. However with it being faster itis hard to make sure it is always accurate and the speed draws lots of power from the rest of the robot.</td>
+      <td style="text-align: center">Some examples of how people have used this:  <a href="https://www.youtube.com/watch?v=ewTCvLp5EUo&amp;list=PLYcmd5xMhOBDhPaTkMiOeN19eW2zIP0fd&amp;index=5">Ex1</a>, <a href="https://www.youtube.com/watch?v=rBShh6KqLoo&amp;list=PLYcmd5xMhOBDhPaTkMiOeN19eW2zIP0fd&amp;index=4">Ex2</a>,  <a href="https://www.youtube.com/watch?v=x6CtdZ91qzI&amp;list=PLYcmd5xMhOBDhPaTkMiOeN19eW2zIP0fd&amp;index=7">Ex3</a>,  These are good example of an accurate catapults.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Medium Balls</td>
+      <td style="text-align: center">Slower fire rates than small balls. Design will also depend on possession limits.</td>
+      <td style="text-align: center"><a href="https://www.youtube.com/watch?v=sWHwDfpeYjo&amp;list=PLYcmd5xMhOBDZdPo84yzfFWGIte8pbuc2&amp;index=6">Ex1</a>: This is a good example of an accurate catapult as well. <a href="https://www.youtube.com/watch?v=nlOlae2ljKI&amp;list=PLYcmd5xMhOBDZdPo84yzfFWGIte8pbuc2&amp;index=8">Ex2</a>: This takes a flywheel approach for the same game.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Large Balls</td>
+      <td style="text-align: center">Requires mechanisms much larger. Can integrate a flywheel or catapult into it but it depends on where it needs to go and the size requirements.</td>
+      <td style="text-align: center"><a href="https://www.youtube.com/watch?v=PtRewwr59d8&amp;list=PLYcmd5xMhOBB2VQXEHGTypEkRGnH2fT2v&amp;index=5">Ex1</a>, <a href="https://www.youtube.com/watch?v=cKDmHCTDQW8&amp;list=PLYcmd5xMhOBB2VQXEHGTypEkRGnH2fT2v&amp;index=15">Ex2</a>: This one has slightly smaller balls and they were able to go directly through the robot.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Cubes</td>
+      <td style="text-align: center">Most commonly picked and placed by robots, sometimes have been shot.</td>
+      <td style="text-align: center"><a href="https://www.youtube.com/watch?v=bFiySP0L6o4&amp;list=PLYcmd5xMhOBD7iKq9rhOJzx0KrRymS0ha&amp;index=4">Ex1</a>, <a href="https://www.youtube.com/watch?v=bFiySP0L6o4&amp;list=PLYcmd5xMhOBD7iKq9rhOJzx0KrRymS0ha&amp;index=4">Ex2</a>, <a href="https://www.youtube.com/watch?v=pBt4QQi2BjM&amp;list=PLYcmd5xMhOBD7iKq9rhOJzx0KrRymS0ha&amp;index=2">Ex3</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Frisbes/ Rings</td>
+      <td style="text-align: center">Depending on the game sometimes they need some spin or they just need vertical compression.</td>
+      <td style="text-align: center"><a href="https://www.youtube.com/watch?v=DojyJ9bZ4fk&amp;list=PLYcmd5xMhOBCQ0h6-llhqE80ihumFT8Og&amp;index=1">Ex1</a>, <a href="https://www.youtube.com/watch?v=gEPNd2pTjdA">Ex2</a> This one is from the 2024 game where the game pieces were manipulated much more.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="catapult">Catapult</h2>
+<p>Good for objects that do not rely on accuracy or compression, and are irregular shaped objects that are not possible with flywheel.</p>
+
+<p>Pneumatics
+Launches things using pneumatic cylinders
+Can be aided with springs or elastics to increase the force of the launch.
+Pressure changes = accuracy changes</p>
+
+<h3 id="slip-gear-catapults">Slip Gear Catapults:</h3>
+<p>Gear missing teeth meshes with a gear with all the teeth and an arm attached 
+It keeps going and springs when it hits that open gear part.
+However it could damage the gear depending on the load.</p>
+
+<h3 id="drop-cam-catapult">Drop Cam Catapult</h3>
+<p>https://www.technologystudent.com/cams/cam10.htm 
+A mechanism with that launches when a certain point is reached on the cam.
+This is not very popular but this system my be useful to incorporate into a design.
+Look into math and how to calculate a cam (robert)</p>
+
+<h3 id="choo-choo-catapult">Choo-choo catapult</h3>
+<p>Retracts using some sort of elastic and a spinning thing doing a choo choo movement.</p>
+
+<h2 id="linear-punchers-can-only-go-in-one-direction">Linear punchers (can only go in one direction)</h2>
+<h3 id="spring-loaded-linear-puncher">Spring Loaded Linear Puncher</h3>
+<p>Using a pull back mechanism to compress some spring or form of energy to release a mechanism
+There are a variety of pull back mechanisms such as
+Ball Screw pulling back shooter plate to launch 
+Chain pulling back shooter plate to the desired position</p>
+<h3 id="pneumatic-linear-punch">Pneumatic Linear Punch</h3>
+<p>Pneumatic actuators push something out of the robot. Here is an example of how it is used:</p>
+
+<p><a href="https://www.youtube.com/watch?v=bFiySP0L6o4&amp;t=19s"><img src="/images/redbacks.jpg" alt="IMAGE ALT TEXT HERE" /></a></p>
+
+<p>Equations of force and energy (Robert)
+Robonauts 2014</p>
+
+<p>Elevator puncher robot 2022 4907</p>
+
+<h2 id="turrets">Turrets</h2>
+
+<p>Purpose: to be able to rotate a mechanism without moving the drive train. Commonly mounted to shooters or an arm/elevator. Makes the robot very complex, especially if there is a large load at the top. They are not always necessary in order to play competitively but can give a design advantage. They take a lot of time and prototyping in order to build along with fab and programming resources and will make you sacrifice a motor slot in order to pull them.</p>
+
+<h3 id="turret-bearing-types">Turret bearing types</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Bearing type</th>
+      <th style="text-align: center">Pros/Cons</th>
+      <th style="text-align: center">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Lazy Susan</td>
+      <td style="text-align: center">Simple and cheap. One large COTS bearing. Usually can support the weight but impacts can cause it to break and separate. Can struggle to support the loading from other mechanisms on the robot.</td>
+      <td style="text-align: center"><img src="/images/lasysusan.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Shoulder Bolts with Bearings</td>
+      <td style="text-align: center">Most common. Stacks of bearings of different sizes that are  perpendicular to the metal and the top and bottom are the same size bearing while the middle is slightly smaller. Works well for shooter turrets. Higher part count than lazy susan but offers more flexibility.</td>
+      <td style="text-align: center">Look at hightide cads or things on chief delphi</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3D Blocks with bearings riding on all surfaces</td>
+      <td style="text-align: center">Similar to the shoulder bolts with bearing but basically has a custom block with bearings on 3 sides of the turret ring(two vertically on top and one horizontally to the side). The blocks are very complex and would have to be CNC. Is better because all bearings are receiving a part of the load.</td>
+      <td style="text-align: center"><img src="/images/3dblocks.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Singular X-bearing</td>
+      <td style="text-align: center">It is a bearing that is created with archways that allows for moment and axial loads to be accepted. It is best for mechanisms with large moment loads. Used most commonly for swerve modules. Can be expensive.</td>
+      <td style="text-align: center"><img src="/images/singularxbearing.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>‎</p>
+
+<h3 id="turret-drive-types">Turret drive types</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Name Lightest/weakest -&gt; Strongest/heaviest</th>
+      <th style="text-align: center">Description/Pros/Cons</th>
+      <th style="text-align: center">Images</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Belt Driven</td>
+      <td style="text-align: center">Very dependent on the space you have for it and the friction that is on it. Design must consider all of it together and the other systems. Simple if you want it to turn less than 360 -&gt; Can attach to the drive plate with bolts or rivets. Though it will not be able to pass any of the bolts on the belt. If needed to turn more than 360 deg then might have to 3d print a large pulley teeth or find another alternative. Could possibly wear out the belt/pulley</td>
+      <td style="text-align: center"><img src="/images/beltdriven.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Chain Driven</td>
+      <td style="text-align: center">Very large Turret Sprocket would be used along with a smaller sprocket attached to a motor. Make sure to design a tensioner into the turret design.</td>
+      <td style="text-align: center">No Image</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Gear Driven</td>
+      <td style="text-align: center">Most Complex b/c of the very large gear involved. Is the most compact. Possibly the strongest one. External or internal, either on the outside of the gear or the inside of the gear (is more compact but makes it hard to put stuff through). Very heavy. Include how to design turret gears</td>
+      <td style="text-align: center"><img src="/images/geardriven.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+            </div>
+          </div>
+          <br>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="http://localhost:4000/design/Base.html" class="btn btn-neutral float-right" title="Bases">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/" class="btn btn-neutral" title="Welcome!"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+    <hr/>
+
+    <div role="contentinfo">
+      <p>
+          © Copyright 2025 Team 1138.
+      </p>
+    </div>
+    Built with
+    <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
+    using a <a href="https://github.com/carlosperate/jekyll-theme-rtd" target="_blank">theme</a>
+    based on <a href="https://sphinx-rtd-theme.readthedocs.io" target="_blank">Read the Docs</a>.
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <a href="https://github.com/1138programming/1138programming.github.io" class="fa fa-github" target="_blank" style="float: left; color: #fcfcfc"> GitHub</a>
+        <span><a href="http://localhost:4000/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span style="margin-left: 15px"><a href="http://localhost:4000/design/Base.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+
+
+  <!--Default scripts-->
+  <script>var base_url = '';</script>
+  <script src="http://localhost:4000/assets/js/jquery-2.1.1.min.js" defer></script>
+  <script src="http://localhost:4000/assets/js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="http://localhost:4000/assets/js/theme.js" defer></script>
+  <script type="text/javascript" defer>
+    hljs.initHighlightingOnLoad();
+    window.addEventListener('load', function() {
+      SphinxRtdTheme.Navigation.enable(false);
+    });
+  </script>
+  <!-- Build Date: 2025-06-24 18:16 -->
+
+  <!--Our scripts-->
+  <script src="../js/customMarkdown.js" defer id="customMarkdownJsFileID" expiremental-enabled="false"></script>
+</body>
+</html>

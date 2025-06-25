@@ -38,6 +38,8 @@ collections:
   articles:
     output: true
 
+source: C:\Users\team1\Documents\GitHub\1138programming.github.io\docs
+
 defaults:
   -scope:
     path: "_articles"

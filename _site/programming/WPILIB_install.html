@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<h1 id="installing-wpilib">Installing WPILIB</h1>
+">
+  
+  <meta name="author" content="Team 1138">
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
+
+  <title>Install WPILIB (for personal computers) - Team 1138 Wiki</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/theme.css" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-dark.min.css" />
+</head>
+
+<body class="wy-body-for-nav" role="document" id="pageBody">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" id="navbar" class="wy-nav-side stickynav">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="http://localhost:4000" class="icon icon-home"> Team 1138 Wiki</a>
+          <div role="search">
+    <form id ="rtd-search-form" class="wy-form" action="/search.html" method="get">
+      <input type="text" name="q" id="search-query" placeholder="Search docs" title="Type search term here" />
+    </form>
+  </div>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/">Welcome!</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">design</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/launchers.html">Launchers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/Base.html">Bases</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/Structure.html">Structure</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/design/IndexersandStorages.html">Indexers and Storages</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">misc</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/misc/howto.html">How to write an article</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">programming</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/Neccessary_Software.html">Neccessary Software</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/Java_Resources.html">Java Resources</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/swerve.html">Swerve</a>
+                    </li>
+                </ul><ul>
+  <li class="toctree-l1 current"><a href="#installing-wpilib">Installing WPILIB</a>
+    <ul>
+      <li class="toctree-l2"><a href="#prerequisites">Prerequisites</a>
+        <ul>
+          <li class="toctree-l3"><a href="#supported-systems-and-architectures">Supported systems and architectures</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#download-wpilib-installer">Download WPILIB Installer</a>
+        <ul>
+          <li class="toctree-l3"><a href="#extract-installer">Extract Installer</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#open-installer">Open installer</a>
+        <ul>
+          <li class="toctree-l3"><a href="#open-installer-on-windows">Open installer on Windows</a></li>
+          <li class="toctree-l3"><a href="#open-installer-on-macos">Open installer on macOS</a></li>
+        </ul>
+      </li>
+      <li class="toctree-l2"><a href="#run-installer">Run Installer</a></li>
+      <li class="toctree-l2"><a href="#post-instillation-and-information">Post Instillation and Information</a>
+        <ul>
+          <li class="toctree-l3"><a href="#post-instillation-fro-macos">Post instillation fro macOS</a></li>
+          <li class="toctree-l3"><a href="#what-is-installed">What is installed</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/bluetooth.html">Bluetooth</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/github_and_version_control.html">Github and Version Control</a>
+                    </li>
+                </ul>
+    <p class="caption"><span class="caption-text">shapeoko</span></p>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/shapeoko/carbide-create.html">Shapeoko Basics: Carbide Create</a>
+                    </li>
+                </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap" id="mobilePageBody">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="http://localhost:4000">Team 1138 Wiki</a>
+      </nav>
+      <div class="wy-nav-content" id="pageContentDiv">
+        <div class="rst-content" id="breadcrumbDiv">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+    <ul class="wy-breadcrumbs">
+          <li><a href="http://localhost:4000">Docs</a>&raquo;</li>
+          <li>Install WPILIB (for personal computers)</li>
+      <li class="author-name">
+         By: Brighton Gannaway </p> 
+      </li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+    </ul>
+    <hr>
+  </div>
+          <div role="main">
+            <div class="section" id="compiledMarkdownDiv">
+              <h1 id="installing-wpilib">Installing WPILIB</h1>
+
+<p><span style="color:red"><b>A guide for personal computers only: For programming laptops given out, go to the laptop hospital</b></span></p>
+
+<p>WPILIB is the main library programming uses for building programs for the robot. When the provided programming laptops
+are slow it can be helpful to download it on a computer of your own. This tutorial follows that process of instillation</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<hr />
+
+<p>Some prerequisites must be met in order to install WPILIB with ease</p>
+
+<h3 id="supported-systems-and-architectures">Supported systems and architectures</h3>
+
+<ul>
+    <li>Windows 10 &amp; 11, 64 bit only. 32 bit and Arm are not supported</li>
+    <li>Ubuntu 22.04 &amp; 24.04, 64 bit. Other Linux distributions with glibc &gt;= 2.34 may work, but are unsupported</li>
+    <li>macOS 13.3 or higher, both Intel and Arm</li>
+</ul>
+
+<h2 id="download-wpilib-installer">Download WPILIB Installer</h2>
+<hr />
+
+<p>If you have met all the perquisites, congrats, you are now ready to download WPILIB! 👍</p>
+
+<p><a href="https://packages.wpilib.workers.dev/installer/v2025.2.1/Win64/WPILib_Windows-2025.2.1.iso">Download WPILIB here</a></p>
+
+<p><a href="https://github.com/wpilibsuite/allwpilib/releases/latest/">Install from github (optional)</a></p>
+
+<h3 id="extract-installer">Extract Installer</h3>
+
+<p>Once you have downloaded the WPILIB installer you ust extract the installer to set up WPILIB officially. It is a disk image file <code class="language-plaintext highlighter-rouge">.iso</code> for <strong>Windows</strong>, <code class="language-plaintext highlighter-rouge">.tar.gz</code> for <strong>Linux</strong>, and a <code class="language-plaintext highlighter-rouge">DMG</code> file for macOS</p>
+
+<h2 id="open-installer">Open installer</h2>
+<hr />
+
+<h3 id="open-installer-on-windows">Open installer on Windows</h3>
+
+<p>Windows 10+ users can right click on the downloaded disk image and select Mount to open it. Then launch <code class="language-plaintext highlighter-rouge">WPILibInstaller.exe.</code></p>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/extract-windows-10.webp" alt="Screenshot of Mount in Window's file manager" /></p>
+
+<p>You can use 7-zip to extract the disk image by right-clicking, selecting <code class="language-plaintext highlighter-rouge">7-Zip</code> and selecting Extract to…. you may need to select Show more options at the bottom of the context menu.</p>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/extract-windows-7.webp" alt="Screenshot of extracting 7-zip file" /></p>
+
+<h3 id="open-installer-on-macos">Open installer on macOS</h3>
+
+<p>macOS users can double click on the downloaded <code class="language-plaintext highlighter-rouge">dmg</code> and then select <code class="language-plaintext highlighter-rouge">WPILibInstaller</code> to launch the application.</p>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/macos-launch.webp" alt="Screenshot of d m g file on the installer" /></p>
+
+<h2 id="run-installer">Run Installer</h2>
+<hr />
+
+<p>Upon opening the installer, press <code class="language-plaintext highlighter-rouge">start</code> in the bottom left corner</p>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/installer-start.webp" alt="Screenshot of installer upon opening" />
+<img src="https://docs.wpilib.org/en/stable/_images/installer-options.webp" alt="Screenshot of installer asking for installation options" /></p>
+
+<p>There are 2 options upon starting instillation, select <code class="language-plaintext highlighter-rouge">install for this user</code> and one of the following options:</p>
+
+<ul>
+    <li> Tools Only installs just the WPILib tools (Pathweaver, Shuffleboard, RobotBuilder, SysId, Glass, and OutlineViewer) and JDK.</li>
+    <li> Everything installs the full development environment (VS Code, extensions, all dependencies), WPILib tools, and JDK. (Recommended)</li>
+</ul>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/installer-vscode-download.webp" alt="Screenshot of VSCode options" />
+The above showcases options fro the downloading of VScode select one:</p>
+
+<ul>
+    <li> Download for this computer only
+        <ul>
+            <li> This downloads VS Code only for the current platform. (smallest) </li>
+        </ul>
+    </li>
+    <li> Skip and don’t use VS Code
+        <ul>
+            <li> Skips installing VS Code. Useful for advanced installations or configurations. (Not recommended) </li>
+        </ul>
+    </li>
+    <li> Select existing VS Code archive for offline install on this computer
+        <ul>
+            <li> Selecting this option will bring up a prompt allowing you to select a pre-existing zip file of VS Code that has been downloaded by the installer   previously. This option does not let you select an already installed copy of VS Code on your machine. </li>
+        </ul>
+    </li>
+    <li> Create VS Code archives to share with other computers/OSes for offline install
+        <ul>
+            <li> This option downloads and saves a copy of VS Code for all platforms, which is useful for sharing the copy of the installer. </li>
+        </ul>
+    </li>
+</ul>
+
+<p>Select <code class="language-plaintext highlighter-rouge">Download for this computer only</code>, WPILIB will begin downloading (size ~150MB). Once finished select <code class="language-plaintext highlighter-rouge">next</code>.</p>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/installer-installing.webp" alt="Downloading" /></p>
+
+<p>Once complete, you should be presented with an image that’s similar to the one below</p>
+
+<p><img src="https://docs.wpilib.org/en/stable/_images/installer-finish.webp" alt="Completed instillation screen" /></p>
+
+<p>Congrats! you have successfully installed WPILIB. Press <code class="language-plaintext highlighter-rouge">Finish</code> to complete instillation</p>
+
+<h2 id="post-instillation-and-information">Post Instillation and Information</h2>
+<hr />
+
+<h3 id="post-instillation-fro-macos">Post instillation fro macOS</h3>
+
+<p>Drag the VS Code application to the dock. Eject WPILibInstaller image from the desktop. <strong>Do not move it elsewhere</strong> as this may cause the application to not work</p>
+
+<h3 id="what-is-installed">What is installed</h3>
+
+<ul>
+    <li>Visual Studio Code - WPILIB version</li>
+    <li>C++ compiler</li>
+    <li>Gradle</li>
+    <li>Java JDK/JRE</li>
+    <li>WPILIB tools -  SmartDashboard, Shuffleboard, RobotBuilder, OutlineViewer, PathWeaver, Glass, SysId, Data Log Tool, roboRIO Team Number Setter, AdvantageScope, Elastic, WPIcal</li>
+    <li>WPILIB dependencies</li>
+    <li>VS code extensions</li>
+    <li>Documentation</li>
+</ul>
+
+
+
+            </div>
+          </div>
+          <br>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="http://localhost:4000/programming/bluetooth.html" class="btn btn-neutral float-right" title="Bluetooth">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/programming/swerve.html" class="btn btn-neutral" title="Swerve"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+    <hr/>
+
+    <div role="contentinfo">
+      <p>
+          © Copyright 2025 Team 1138.
+      </p>
+    </div>
+    Built with
+    <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
+    using a <a href="https://github.com/carlosperate/jekyll-theme-rtd" target="_blank">theme</a>
+    based on <a href="https://sphinx-rtd-theme.readthedocs.io" target="_blank">Read the Docs</a>.
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <a href="https://github.com/1138programming/1138programming.github.io" class="fa fa-github" target="_blank" style="float: left; color: #fcfcfc"> GitHub</a>
+        <span><a href="http://localhost:4000/programming/swerve.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span style="margin-left: 15px"><a href="http://localhost:4000/programming/bluetooth.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+
+
+  <!--Default scripts-->
+  <script>var base_url = '';</script>
+  <script src="http://localhost:4000/assets/js/jquery-2.1.1.min.js" defer></script>
+  <script src="http://localhost:4000/assets/js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="http://localhost:4000/assets/js/theme.js" defer></script>
+  <script type="text/javascript" defer>
+    hljs.initHighlightingOnLoad();
+    window.addEventListener('load', function() {
+      SphinxRtdTheme.Navigation.enable(false);
+    });
+  </script>
+  <!-- Build Date: 2025-06-24 18:16 -->
+
+  <!--Our scripts-->
+  <script src="../js/customMarkdown.js" defer id="customMarkdownJsFileID" expiremental-enabled="false"></script>
+</body>
+</html>
