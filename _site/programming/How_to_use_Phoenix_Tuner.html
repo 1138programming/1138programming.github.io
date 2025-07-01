@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<h1 id="shapeoko-basics-carbide-create">Shapeoko Basics: Carbide Create</h1>
+  <meta name="description" content="<h1 id="how-to-use-phoenix-tuner">How to use Phoenix Tuner</h1>
 ">
   
   <meta name="author" content="Team 1138">
@@ -13,7 +13,7 @@
 
   <link rel="shortcut icon" href="http://localhost:4000/assets/img/favicon.ico">
 
-  <title>Shapeoko Basics: Carbide Create - Team 1138 Wiki</title>
+  <title>How to use Phoenix Tuner - Team 1138 Wiki</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
   <link rel="stylesheet" href="http://localhost:4000/assets/css/theme.css" />
@@ -99,12 +99,17 @@
                     <li class="toctree-l1">
                         <a class="reference internal" href="http://localhost:4000/programming/Neccessary_Software.html">Neccessary Software</a>
                     </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1">
-                        <a class="reference internal" href="http://localhost:4000/programming/How_to_use_Phoenix_Tuner.html">How to use Phoenix Tuner</a>
-                    </li>
-                </ul>
+                </ul><ul>
+  <li class="toctree-l1 current"><a href="#how-to-use-phoenix-tuner">How to use Phoenix Tuner</a>
+    <ul>
+      <li class="toctree-l2"><a href="#connecting-to-the-robot">Connecting to the robot</a></li>
+      <li class="toctree-l2"><a href="#Conf">Configure, Id, and Update CTRE deveices</a></li>
+      <li class="toctree-l2"><a href="#Signal">Retrieve Signal Data </a></li>
+      <li class="toctree-l2"><a href="#Tuner">Generate Tuner Files</a></li>
+    </ul>
+  </li>
+</ul>
+
     <p class="caption"><span class="caption-text">shapeoko</span></p>
                 <ul>
                     <li class="toctree-l1">
@@ -125,9 +130,9 @@
           <div role="navigation" aria-label="breadcrumbs navigation">
     <ul class="wy-breadcrumbs">
           <li><a href="http://localhost:4000">Docs</a>&raquo;</li>
-          <li>Shapeoko Basics: Carbide Create</li>
+          <li>How to use Phoenix Tuner</li>
       <li class="author-name">
-         By: Viren Sharma </p> 
+         By: Thomas Evans </p> 
       </li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -136,52 +141,40 @@
   </div>
           <div role="main">
             <div class="section" id="compiledMarkdownDiv">
-              <h1 id="shapeoko-basics-carbide-create">Shapeoko Basics: Carbide Create</h1>
+              <h1 id="how-to-use-phoenix-tuner">How to use Phoenix Tuner</h1>
 
-<h2 id="creating-and-uploading-g-code-in-carbide-create">Creating and Uploading G-Code in Carbide Create</h2>
-
-<h3 id="1-design-your-part">1. Design Your Part</h3>
-<p>Creating a New Design <br />
-a. <strong>Set Up Your Material</strong>:</p>
+<p>Phoenix Tuner is used to</p>
 <ul>
-  <li>Go to the “Job Setup” menu to define the size and thickness of your material.</li>
-  <li>Specify the material type to help Carbide Create optimize the toolpath.
-b. <strong>Draw Your Shapes</strong>:</li>
-  <li>Use the drawing tools (lines, circles, rectangles, etc.) to create the geometry of your
-part.
-c. <strong>Organize Your Design</strong>:</li>
-  <li>Ensure all the elements of your design are properly aligned and scaled to fit your
-material.
-Uploading a Design (Most Common Option)
-a. <strong>Use a Specific File Type</strong>:</li>
-  <li>Add text or import vector files (such as SVG or DXF).
-b. <strong>Organize Your Design</strong>:</li>
-  <li>Ensure all the elements of your design are properly aligned and scaled to fit your
-material.
-    <h3 id="2-create-toolpaths">2. Create Toolpaths</h3>
-    <p>a. <strong>Select Toolpaths</strong>:</p>
-  </li>
-  <li>Choose the type of toolpath you need (contour, pocket, V-carve, etc.) based on your
-design requirements.
-b. <strong>Assign Toolpaths</strong>:</li>
-  <li>Click on the elements of your design and assign the appropriate toolpaths.</li>
-  <li>Select the cutting tool (end mill, V-bit, etc.) and define parameters such as cutting
-depth, feed rate, and spindle speed (the default speed is correct 95% of the time).
-c. <strong>Preview Toolpaths</strong>:</li>
-  <li>Use the “Simulation” feature to preview the cutting process.</li>
-  <li>Ensure there are no errors and the toolpaths are correctly set up.
-    <h3 id="3-generate-g-code">3. Generate G-Code</h3>
-    <p>a. <strong>Save Toolpaths</strong>:</p>
-  </li>
-  <li>Click on the “Save Toolpaths” button.</li>
-  <li>Carbide Create will compile the toolpaths into a G-code file (.nc file) that the Shapeoko
-can read.
-b. <strong>Export G-Code</strong>:</li>
-  <li>
-    <h2 id="name-your-g-code-file-and-choose-a-location-on-your-computer-to-save-it">Name your G-code file and choose a location on your computer to save it.</h2>
-    <h3 id="next-up-machining-the-part">Next Up: Machining the Part</h3>
-  </li>
+    <li><a href="#Conf"> Configure, Id, and Update CTRE deveices </a></li>
+    <li><a href="#Signal"> Retrieve Signal Data </a></li>
+    <li><a href="#Tuner"> Generate Tuner Files </a></li>
+           
 </ul>
+
+<h2 id="connecting-to-the-robot">Connecting to the robot</h2>
+
+<p>Before you can do anything you need to connect to a the Phoenix Diagnostics Server on the Robot. The Phoenix Diagnostics Server is installed on the robot ontroller when you deploy a program.</p>
+
+<p>To connect use the dropdown/texbox located in the upper left hamburger menu.</p>
+
+<p><img src="/images/tuner-x-connecting.png" alt="Screenshot of Location of Connection Menu" /></p>
+
+<p>The following presets are available to select from</p>
+
+<ul>
+  <li>Driver Station: Retrieves the robot IP address from the Driver Station, if it is open</li>
+  <li>roboRIO USB: Sets the IP to <span class="pre">172.22.11.2<span></span></span></li>
+  <li>localhost: Used for Simulations</li>
+</ul>
+
+<p>You can manually type in IP addresses as well.</p>
+
+<h2 id="Conf">Configure, Id, and Update CTRE deveices</h2>
+
+<p>New CTRE Devices must be given an id in order to be accessed by code.</p>
+
+<h2 id="Signal">Retrieve Signal Data </h2>
+<h2 id="Tuner">Generate Tuner Files</h2>
 
 
             </div>
@@ -189,6 +182,8 @@ b. <strong>Export G-Code</strong>:</li>
           <br>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="http://localhost:4000/shapeoko/carbide-create.html" class="btn btn-neutral float-right" title="Shapeoko Basics: Carbide Create">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/programming/Neccessary_Software.html" class="btn btn-neutral" title="Neccessary Software"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
     <hr/>
@@ -214,6 +209,8 @@ b. <strong>Export G-Code</strong>:</li>
   <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <a href="https://github.com/1138programming/1138programming.github.io" class="fa fa-github" target="_blank" style="float: left; color: #fcfcfc"> GitHub</a>
+        <span><a href="http://localhost:4000/programming/Neccessary_Software.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span style="margin-left: 15px"><a href="http://localhost:4000/shapeoko/carbide-create.html" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 

@@ -2,7 +2,7 @@
 layout: default
 title: Install WPILIB (for personal computers)
 permalink: /programming/WPILIB_install.html
-nav_order: 2
+nav_order: 5
 author: Brighton Gannaway
 ---
 # Installing WPILIB

@@ -69,22 +69,7 @@
                         <a class="reference internal" href="http://localhost:4000/misc/howto.html">How to write an article</a>
                     </li>
                 </ul>
-    <p class="caption"><span class="caption-text">programming</span></p><ul>
-  <li class="toctree-l1 current"><a href="#neccessary-software">Neccessary Software</a>
-    <ul>
-      <li class="toctree-l2"><a href="#game-tools">Game Tools</a></li>
-      <li class="toctree-l2"><a href="#wpilib">WPILib</a></li>
-      <li class="toctree-l2"><a href="#ctre-pheonix-tuner-x">CTRE Pheonix Tuner X</a></li>
-      <li class="toctree-l2"><a href="#rev-hardware-client">Rev Hardware Client</a></li>
-      <li class="toctree-l2"><a href="#elastic">Elastic</a></li>
-      <li class="toctree-l2"><a href="#pathplanner">Pathplanner</a></li>
-      <li class="toctree-l2"><a href="#stream-deck">Stream Deck</a></li>
-      <li class="toctree-l2"><a href="#vjoy">Vjoy</a></li>
-      <li class="toctree-l2"><a href="#github-desktop">Github Desktop</a></li>
-    </ul>
-  </li>
-</ul>
-
+    <p class="caption"><span class="caption-text">programming</span></p>
                 <ul>
                     <li class="toctree-l1">
                         <a class="reference internal" href="http://localhost:4000/programming/Java_Resources.html">Java Resources</a>
@@ -97,17 +82,47 @@
                 </ul>
                 <ul>
                     <li class="toctree-l1">
-                        <a class="reference internal" href="http://localhost:4000/programming/WPILIB_install.html">Install WPILIB (for personal computers)</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1">
                         <a class="reference internal" href="http://localhost:4000/programming/bluetooth.html">Bluetooth</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1">
                         <a class="reference internal" href="http://localhost:4000/programming/github_and_version_control.html">Github and Version Control</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/WPILIB_install.html">Install WPILIB (for personal computers)</a>
+                    </li>
+                </ul><ul>
+  <li class="toctree-l1 current"><a href="#neccessary-software">Neccessary Software</a></li>
+  <li class="toctree-l1 current"><a href="#frc-programming">FRC Programming</a>
+    <ul>
+      <li class="toctree-l2"><a href="#game-tools">Game Tools</a></li>
+      <li class="toctree-l2"><a href="#wpilib">WPILib</a></li>
+      <li class="toctree-l2"><a href="#ctre-phoenix-tuner-x">CTRE Phoenix Tuner X</a></li>
+      <li class="toctree-l2"><a href="#rev-hardware-client">Rev Hardware Client</a></li>
+      <li class="toctree-l2"><a href="#Elastic">Elastic </a></li>
+      <li class="toctree-l2"><a href="#pathplanner">Pathplanner</a></li>
+      <li class="toctree-l2"><a href="#elgato-stream-deck">Elgato Stream Deck</a></li>
+      <li class="toctree-l2"><a href="#vjoy">Vjoy</a></li>
+      <li class="toctree-l2"><a href="#limelight-hardware-manager">Limelight Hardware Manager</a></li>
+      <li class="toctree-l2"><a href="#balena-etcher">Balena Etcher</a></li>
+      <li class="toctree-l2"><a href="#github-desktop">Github Desktop</a></li>
+    </ul>
+  </li>
+  <li class="toctree-l1 current"><a href="#software-needed-for-bluetooth-and-app-development">Software Needed for Bluetooth and App Development</a>
+    <ul>
+      <li class="toctree-l2"><a href="#android-studio">Android Studio</a></li>
+      <li class="toctree-l2"><a href="#mingw32">Mingw32</a></li>
+      <li class="toctree-l2"><a href="#mariahdb">MariahDB</a></li>
+    </ul>
+  </li>
+</ul>
+
+                <ul>
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="http://localhost:4000/programming/How_to_use_Phoenix_Tuner.html">How to use Phoenix Tuner</a>
                     </li>
                 </ul>
     <p class="caption"><span class="caption-text">shapeoko</span></p>
@@ -143,7 +158,9 @@
             <div class="section" id="compiledMarkdownDiv">
               <h1 id="neccessary-software">Neccessary Software</h1>
 
-<p>This is a list of software used in frc programming.</p>
+<h1 id="frc-programming">FRC Programming</h1>
+
+<p>This is a list of software used in FRC programming.</p>
 
 <h2 id="game-tools">Game Tools</h2>
 
@@ -165,35 +182,69 @@
 
 <h2 id="wpilib">WPILib</h2>
 
-<p>The Library that FRC uses for robot proggraming is WPIlib. It Provides the OS that runs on our Robot. You can read the WPIlib Documentation <a href="https://docs.wpilib.org/en/stable/index.html">Here</a> and the <a href="https://github.wpilib.org/allwpilib/docs/release/java/index.html">Java API Docs</a></p>
+<p>The Library that FRC uses for robot proggraming is WPIlib. WPIlib is the framework that we use to compile our code and deploy it to the robot. A guide on its instalation can be found <a href="/programming/WPILIB_install.html">Here</a>. <span style="color:red"><b> Note: Instalation requires administrative privileges, Go to the Laptop Hospital to install on programming laptops. </b></span> You can read the WPIlib Documentation <a href="https://docs.wpilib.org/en/stable/index.html">Here</a> and the <a href="https://github.wpilib.org/allwpilib/docs/release/java/index.html">Java API Docs</a>.</p>
 
-<h2 id="ctre-pheonix-tuner-x">CTRE Pheonix Tuner X</h2>
+<p>2025 WPLIB includes</p>
 
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<ul>
+  <li>WPILib Vscode</li>
+  <li>WPILib Documentation</li>
+  <li>Shuffleboard</li>
+  <li>WPILib tools
+    <ul>
+  <li> AdvantageScope </li>
+  <li> Data Log Tool </li>
+  <li>  <a href="Elastic"> Elastic </a></li>
+  <li> Glass </li>
+  <li> Outline Viewer </li>
+  <li> PathWeaver </li>
+  <li> RoboRio Team Number setter </li>
+  <li> Robot Builder </li>
+  <li> Shuffleboard </li>
+  <li> SmartDashbord </li>
+  <li> Sysid </li>
+  <li> WPIcal </li>
+  </ul>
+  </li>
+</ul>
+
+<h2 id="ctre-phoenix-tuner-x">CTRE Phoenix Tuner X</h2>
+
+<p>Phoenix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://www.revrobotics.com/frc/">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Phoenix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a> Check out <a href="/programming/How_to_use_Phoenix_Tuner.html">How to use Phoenix Tuner</a> for more details on how to use Phoenix Tuner X</p>
 
 <h2 id="rev-hardware-client">Rev Hardware Client</h2>
 
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<p>Rev Hardware Client is an application responsible for Rev made devices such as the SparkFlex, SparkMax, and PDH. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of Rev Products</a>, <a href="https://docs.revrobotics.com/rev-hardware-client">Rev Hardware Client Documentation</a>. Rev Hardware Client is used to id,update firmware, and configure Rev  devices.</p>
 
-<h2 id="elastic">Elastic</h2>
+<h2 id="Elastic">Elastic </h2>
 
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<p>Elastic is an application responsible for displaying data from the robot. You can Download it from the <a href="https://github.com/Gold872/elastic-dashboard/releases/tag/v2025.2.2">GitHub page</a>, and read the <a href="https://docs.wpilib.org/en/stable/docs/software/dashboards/elastic.html">Elastic Docs</a>.</p>
 
 <h2 id="pathplanner">Pathplanner</h2>
 
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<p>Pathplanner is an application responsible for the development of autons. You can download it from the Microsoft store to recieve auto updates or get manual updates form its <a href="https://github.com/mjansen4857/pathplanner/releases">Github Page</a>. <a href="https://pathplanner.dev/home.html">Pathplanner Docs</a></p>
 
-<h2 id="stream-deck">Stream Deck</h2>
-
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<h2 id="elgato-stream-deck">Elgato Stream Deck</h2>
 
 <h2 id="vjoy">Vjoy</h2>
 
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<h2 id="limelight-hardware-manager">Limelight Hardware Manager</h2>
+
+<h2 id="balena-etcher">Balena Etcher</h2>
 
 <h2 id="github-desktop">Github Desktop</h2>
 
-<p>Pheonix Tuner X is an application responsible for CTRE made devices such as the Kraken, Canoviore, Cancoder, and Talon. <a href="https://store.ctr-electronics.com/collections/all-products?srsltid=AfmBOoqkTaje-vmSc1-Nimmzelik4KV884CzIbOPf00AxWLy5GLeit1J">List of CTRE Products</a>, <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/tuner/index.html">Pheonix Tuner X Documentation</a>.  Pheonix Tuner x is used to id,update firmware, and configure CTRE devices. It can also gernerate tuner files for the sweve drive, and retrieve data from the <a href="https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/signal-logging.html">signal logger</a></p>
+<p>Github Desktop is a GUI desktop application for interfacing with GIT, which is the software we use for version control. For details on version control and how to use Github Desktop check out <a href="/programming/github_and_version_control.html">Github and Version Control</a> and <a href="https://git-scm.com/doc">GIT docs</a>. You can install Github desktop <a href="https://desktop.github.com/download/">Here</a></p>
+
+<h1 id="software-needed-for-bluetooth-and-app-development">Software Needed for Bluetooth and App Development</h1>
+
+<p>This is a list of software used in Bluetooth and App Development</p>
+
+<h2 id="android-studio">Android Studio</h2>
+
+<h2 id="mingw32">Mingw32</h2>
+
+<h2 id="mariahdb">MariahDB</h2>
 
 
             </div>
@@ -201,8 +252,8 @@
           <br>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="http://localhost:4000/programming/Java_Resources.html" class="btn btn-neutral float-right" title="Java Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
-        <a href="http://localhost:4000/misc/howto.html" class="btn btn-neutral" title="How to write an article"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="http://localhost:4000/programming/How_to_use_Phoenix_Tuner.html" class="btn btn-neutral float-right" title="How to use Phoenix Tuner">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="http://localhost:4000/programming/WPILIB_install.html" class="btn btn-neutral" title="Install WPILIB (for personal computers)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
     <hr/>
@@ -228,8 +279,8 @@
   <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <a href="https://github.com/1138programming/1138programming.github.io" class="fa fa-github" target="_blank" style="float: left; color: #fcfcfc"> GitHub</a>
-        <span><a href="http://localhost:4000/misc/howto.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
-        <span style="margin-left: 15px"><a href="http://localhost:4000/programming/Java_Resources.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span><a href="http://localhost:4000/programming/WPILIB_install.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span style="margin-left: 15px"><a href="http://localhost:4000/programming/How_to_use_Phoenix_Tuner.html" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
@@ -246,7 +297,7 @@
       SphinxRtdTheme.Navigation.enable(false);
     });
   </script>
-  <!-- Build Date: 2025-06-24 18:16 -->
+  <!-- Build Date: 2025-06-30 16:46 -->
 
   <!--Our scripts-->
   <script src="../js/customMarkdown.js" defer id="customMarkdownJsFileID" expiremental-enabled="false"></script>
